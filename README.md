@@ -64,6 +64,8 @@ src/
 │   │   └── InfrastructureServiceRegistration.cs
 │   ├── Persistence/
 │   │   └── ApplicationDbContext.cs
-│   └── Repository/
+│   └── Repository
+        └──CustomerRepository
+        └──OrderRepository
 └── 04. Api/
     └── Controllers/
