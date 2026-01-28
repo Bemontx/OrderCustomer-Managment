@@ -15,5 +15,5 @@ public class DeleteCustomerHandler : IRequestHandler<DeleteCustomerCommand, bool
         await _customerRepository.DeleteAsync(request.Id);
         return true;
     }
-{
+
 }

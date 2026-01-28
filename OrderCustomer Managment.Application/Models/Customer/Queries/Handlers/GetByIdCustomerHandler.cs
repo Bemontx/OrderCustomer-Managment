@@ -13,7 +13,7 @@ namespace OrderCustomer_Managment.Application.Models.Customer.Queries.Handlers
         }
         public async Task<CustomerDto> Handle(CustomerGetByIdQuery request, CancellationToken cancellationToken)
         {
-            var customer = await _customerRepository.GetByIdAsync(request.CustomerId);
+            var customer = await _customerRepository.GetByIdAsync(request.Id);
             if (customer == null)
             {
                 return null;
