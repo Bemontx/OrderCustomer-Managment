@@ -4,17 +4,15 @@ using OrderCustomer_Managment.Infrastructure.DependencyInjections;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Mantén los controladores
+// 1. controladores
 builder.Services.AddControllers();
 
-// 2. Swagger (Esto evita el error del 'GetSwagger')
+// 2. Swagger 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-// 3. DESCOMENTA ESTO (Es vital para la migración)
 builder.Services.AddInfrastructure(builder.Configuration);
 
-// 4. Agrega MediatR (si tus migraciones dependen de alguna lógica de inicialización)
+// 4.  MediatR
 builder.Services.AddMediatR(cfg => {
     cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
 });
