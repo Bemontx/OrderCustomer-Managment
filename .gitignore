@@ -1,0 +1,44 @@
+## Borradores y archivos temporales de compilación
+bin/
+obj/
+out/
+
+## Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.doccache
+
+## Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Rider (JetBrains)
+.idea/
+*.sln.iml
+
+## Archivos de usuario y secretos (IMPORTANTE)
+appsettings.Development.json
+appsettings.Local.json
+*.secrets.json
+.env
+
+## Paquetes NuGet
+*.nupkg
+# Se excluye la carpeta de paquetes porque dotnet restore los descarga
+**/packages/*
+!**/packages/build/
+
+## Archivos de log y base de datos local
+*.log
+*.sqlite
+*.db
+*.db-shm
+*.db-wal
+
+## Otros
+.DS_Store
+Thumbs.db

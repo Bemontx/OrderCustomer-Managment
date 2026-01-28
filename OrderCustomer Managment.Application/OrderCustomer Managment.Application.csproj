@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>OrderCustomer_Managment.Application</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderCustomer Managment.Domain\OrderCustomer Managment.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Customer\Queries\Handlers\" />
+    <Folder Include="Models\Customer\Validators\" />
+    <Folder Include="Models\Order\Commands\" />
+    <Folder Include="Models\Order\DTOs\" />
+    <Folder Include="Models\Order\Handlers\" />
+    <Folder Include="Models\Order\validators\" />
+    <Folder Include="Models\Order\Queries\" />
+  </ItemGroup>
+
+</Project>
