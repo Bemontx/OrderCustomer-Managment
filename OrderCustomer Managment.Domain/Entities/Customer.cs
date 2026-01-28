@@ -8,6 +8,7 @@ public class Customer
     public string Name { get; set; }
     public string Adress { get; set; }
     public States States { get; set; }
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
     public DateTime CreatedDate { get; set; }= DateTime.Now;
 
 }
