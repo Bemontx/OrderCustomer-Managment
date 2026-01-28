@@ -5,9 +5,9 @@ namespace OrderCustomer_Managment.Application.Models.Customer.Queries;
 
 public class CustomerGetByIdQuery : IRequest<CustomerDto>
 {
-    public Guid CustomerId { get; set; }
-    public CustomerGetByIdQuery(Guid customerId)
+    public Guid Id { get; set; }
+    public CustomerGetByIdQuery(Guid id)
     {
-        CustomerId = customerId;        
+        Id = id;        
     }
 }

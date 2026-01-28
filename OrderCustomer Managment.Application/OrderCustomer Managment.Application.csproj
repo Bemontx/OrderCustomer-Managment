@@ -16,13 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Customer\Queries\Handlers\" />
     <Folder Include="Models\Customer\Validators\" />
-    <Folder Include="Models\Order\Commands\" />
-    <Folder Include="Models\Order\DTOs\" />
-    <Folder Include="Models\Order\Handlers\" />
     <Folder Include="Models\Order\validators\" />
-    <Folder Include="Models\Order\Queries\" />
   </ItemGroup>
 
 </Project>
